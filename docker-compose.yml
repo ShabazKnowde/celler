@@ -7,7 +7,7 @@ services:
     environment:
       FLASK_APP: run
       FLASK_DEBUG: 1
-      DATABASE_URL: postgresql://flask_celery_postgres_user:IprJxGy216tm2UVCIdyBFGogOWE4yEAg@dpg-cjt7fop5mpss738ds650-a.oregon-postgres.render.com/flask_celery_postgres
+      DATABASE_URL: postgresql://flask_cel_try_user:c3gyhf5wHv6jeyh5RPSqxebNtSP1gdkS@dpg-cm04g9ta73kc73c01gp0-a.oregon-postgres.render.com/flask_cel_try
     volumes:
       - .:/app
     command: flask run -h 0.0.0.0
@@ -18,7 +18,7 @@ services:
         context: .
     environment:
       FLASK_APP: run
-      DATABASE_URL: postgresql://flask_celery_postgres_user:IprJxGy216tm2UVCIdyBFGogOWE4yEAg@dpg-cjt7fop5mpss738ds650-a.oregon-postgres.render.com/flask_celery_postgres
+      DATABASE_URL: postgresql://flask_cel_try_user:c3gyhf5wHv6jeyh5RPSqxebNtSP1gdkS@dpg-cm04g9ta73kc73c01gp0-a.oregon-postgres.render.com/flask_cel_try
     volumes:
       - .:/app
     command: celery -A run.celery worker --loglevel=info
